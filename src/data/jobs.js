@@ -12,7 +12,7 @@ const jobs = [
 
     {
         id: 2,
-        title: "React Developer Intern",
+        title: "React Developer",
         company: "Microsoft",
         location: "Hyderabad",
         type: "Internship",
@@ -34,7 +34,7 @@ const jobs = [
 
     {
         id: 4,
-        title: "Data Analyst Intern",
+        title: "Data Analyst",
         company: "Amazon",
         location: "Bangalore",
         type: "Internship",
