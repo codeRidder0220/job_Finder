@@ -5,6 +5,7 @@ import categ from '../assets/category.png'
 import company from '../assets/company.png'
 import dash from '../assets/dashboard.png'
 import trend from '../assets/trending.png'
+import { Link , NavLink } from 'react-router-dom'
 
 const Navigate = () => {
     return (
@@ -19,7 +20,7 @@ const Navigate = () => {
                     <h3 className='text-sm pl-17'>Find jobs....</h3>
 
                     <div className='flex justify-end mt-2 pr-5'>
-                        <a className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">View Jobs</a>
+                        <NavLink to="/jobs" className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">View Jobs</NavLink>
                     </div>
 
                 </div>
@@ -32,7 +33,7 @@ const Navigate = () => {
                     <h3 className='text-sm pl-17'>explore companies...</h3>
 
                     <div className='flex justify-end mt-2 pr-5'>
-                        <a className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">Explore</a>
+                        <NavLink to='/companies' className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">Explore</NavLink>
                     </div>
 
                 </div>
@@ -45,7 +46,7 @@ const Navigate = () => {
                     <h3 className='text-sm pl-17'>browse jobs by categories...</h3>
 
                     <div className='flex justify-end mt-2 pr-5'>
-                        <a className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">Browse</a>
+                        <NavLink to='/categories' className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">Browse</NavLink>
                     </div>
 
                 </div>
@@ -58,7 +59,7 @@ const Navigate = () => {
                     <h3 className='text-sm pl-17'>career help & resources...</h3>
 
                     <div className='flex justify-end mt-2 pr-5'>
-                        <a className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">Explore</a>
+                        <NavLink to='/resources' className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">Explore</NavLink>
                     </div>
 
                 </div>
@@ -71,7 +72,7 @@ const Navigate = () => {
                     <h3 className='text-sm pl-17'>track your application...</h3>
 
                     <div className='flex justify-end mt-2 pr-5'>
-                        <a className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">Open</a>
+                        <NavLink to='/dashboard' className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">Open</NavLink>
                     </div>
 
                 </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import logo from "../assets/email.png";
 import dark from "../assets/moon.png";
 import light from "../assets/light.png";
-
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -12,11 +12,13 @@ const Navbar = () => {
                 <h1 className='text-[25px] font-bold text-[#334155]'>Job <span className='text-[#F59E0b]'>Finder</span></h1>
             </div>
             <div className='flex gap-7 text-[#334155] font-medium text-sm'>
-                <p>Home</p>
-                <p>Jobs</p>
-                <p>Companies</p>
-                <p>Categories</p>
-                <p>About</p>
+
+                <NavLink to='/' className={({isActive}) => isActive ? "text-[#F59E0b]" : ""} >Home</NavLink>
+                <NavLink to='/jobs' className={({isActive}) => isActive ? "text-[#F59E0b]" : ""} >Jobs</NavLink>
+                <NavLink to='/companies' className={({isActive}) => isActive ? "text-[#F59E0b]" : ""} >Companies</NavLink>
+                <NavLink to='/categories' className={({isActive}) => isActive ? "text-[#F59E0b]" : ""} >Categories</NavLink>
+                <NavLink to='/about' >About</NavLink>
+
             </div>
             <div className='gap-3 flex mr-10'>
                 <button><img src={dark} alt="" className='border w-8 bg-[#F59E0b] rounded-full p-1.5' /></button>
