@@ -6,7 +6,7 @@ import abb from '../assets/abb.png'
 
 const About = () => {
     return (
-        <div className='bg-[#F8FAFC]'>
+        <div className=''>
 
             <div className='pt-20 max-w-7xl mx-auto px-8'>
 

@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
     return (
-        <div className='flex justify-between bg-[#F8FAFC]'>
+        <div className='flex justify-between '>
             <div className='mt-10 ml-10'>
                 <div className='flex gap-3 h-5'>
                     <h2 className='text-sm bg-[#f8ad2c] text-white w-70 rounded-full px-4'>Find your next opportunity..</h2>

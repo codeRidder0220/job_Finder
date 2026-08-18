@@ -8,7 +8,7 @@ import trend from '../assets/trending.png'
 
 const Navigate = () => {
     return (
-        <div className='bg-[#F8FAFC]'>
+        <div className=''>
             <div className='grid grid-cols-3 gap-5 w-225 mx-auto '>
 
                 <div className='shadow-md h-30 rounded-2xl hover:scale-105 transition-all'>

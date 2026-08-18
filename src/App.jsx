@@ -6,7 +6,9 @@ function App() {
 
   return (
    <>
+   <div className='bg-[#F8FAFC]'>
    <Home/>
+   </div>
    </>
   )
 }
