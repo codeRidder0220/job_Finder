@@ -5,7 +5,7 @@ import salary from '../assets/salary.png'
 import jobb from '../assets/job.png'
 
 
-const JobCard = ({job}) => {
+const JobCard = ({ job }) => {
     return (
         <div>
             <div className='bg-[#fef7ea] w-70 h-100 rounded-xl ml-10 mt-10 shadow-md hover:scale-102 transition-all'>

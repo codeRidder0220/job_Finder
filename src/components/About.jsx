@@ -72,10 +72,10 @@ const About = () => {
                         <p className='text-[#fad0a1] mx-6 text-[16px] font-medium leading-8'>
 
                             JobFinder is a platform where students and freshers
-                            can easily discover
+                            can easily discover 
 
-                            <span className='text-[#D97706]'>
-                                internship opportunities
+                            <span className='text-[#D97706] font-bold p-1'>
+                                 internship opportunities
                             </span>
 
                             from different companies. Explore roles based on
