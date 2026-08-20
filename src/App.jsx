@@ -7,6 +7,7 @@ import Companies from './pages/Comapnies'
 import Layout from './layouts/Layout'
 
 import {Routes , Route} from 'react-router-dom'
+import JobDetail from './components/JobDetail'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
     <Route path='/' element={<Home/>}/>
     <Route path='/jobs' element={<Jobs/>}/>
+    <Route path='/jobs/:id' element={<JobDetail/>}/>
     <Route path='/companies' element={<Companies/>}/>
     <Route path='/categories' element={<Categories/>}/>
     <Route path='/dashboard' element={<Dashboard/>}/>

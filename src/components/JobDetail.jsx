@@ -31,7 +31,7 @@ const JobDetail = () => {
 
             <Link
                 to="/jobs"
-                className="text-[#D97706] font-medium"
+                className="text-[#D97706] font-medium hover:bg-[#eff2f5] p-3 rounded-full"
             >
                 ← Back to Jobs
             </Link>

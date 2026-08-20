@@ -3,12 +3,13 @@ import loc from '../assets/location.png'
 import house from '../assets/house.png'
 import salary from '../assets/salary.png'
 import jobb from '../assets/job.png'
+import { Link } from 'react-router-dom'
 
 
 const JobCard = ({ job }) => {
     return (
         <div>
-            <div className='bg-[#fef7ea] w-70 h-100 rounded-xl ml-10 mt-10 shadow-md hover:-translate-y-1 transition-all'>
+            <div className='bg-[#fef7ea] w-70 h-100 rounded-xl ml-10 mt-10 shadow-md hover:-translate-y-1 transition-all relative'>
 
 
                 <div className='flex items-center justify-center bg-[#526176] rounded-t-xl'>
@@ -34,6 +35,10 @@ const JobCard = ({ job }) => {
                         </p>
                     </div>
                 </div>
+
+                
+                    <Link to={`/jobs/${job.id}`} className='absolute right-3 bottom-2 text-xl hover:text-[#D97706] hover:text-4xl transition-all hover:cursor-pointer'>→</Link>
+                
 
 
 
