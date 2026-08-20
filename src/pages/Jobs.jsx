@@ -70,38 +70,59 @@ const Jobs = () => {
               <option value="All">All types</option>
               <option value="Internship">Internship</option>
               <option value="Full Time">Full Time</option>
-            
+
 
             </select>
           </div>
 
           <button
-          className='bg-red-400 max-w-25 rounded-lg hover:cursor-pointer py-2 hover:bg-red-500 font-medium'
-          onClick={(e)=>{
-            setType("All")
-            setSearch("")
-            setCateg("All")
-          }}
-          
+            className='bg-red-400 max-w-25 rounded-lg hover:cursor-pointer py-2 hover:bg-red-500 font-medium'
+            onClick={(e) => {
+              setType("All")
+              setSearch("")
+              setCateg("All")
+            }}
+
           >Reset</button>
 
         </div>
       </div>
 
-      <div className='grid grid-cols-4 gap-5 mt-8'>
 
-        {
-          filterJob.map((job) => {
+      {
+        filterJob.length > 0 ? (
 
-            return <JobCard
-              key={job.id}
-              job={job}
-            />
-          })
-        }
+          <div className="grid grid-cols-4 gap-6 mt-6">
 
-      </div>
+            {
+              filterJob.map((job) => (
 
+                <JobCard
+                  key={job.id}
+                  job={job}
+                />
+
+              ))
+            }
+
+          </div>
+
+        ) : (
+
+          <div className="text-center py-20">
+
+            <h2 className="text-2xl font-semibold text-[#334155]">
+              No jobs found
+            </h2>
+
+            <p className="text-gray-500 mt-2">
+              Try changing your search or filters.
+            </p>
+
+          </div>
+
+        )
+      }
 
     </div>
   )
