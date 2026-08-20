@@ -8,7 +8,7 @@ import jobb from '../assets/job.png'
 const JobCard = ({ job }) => {
     return (
         <div>
-            <div className='bg-[#fef7ea] w-70 h-100 rounded-xl ml-10 mt-10 shadow-md hover:scale-102 transition-all'>
+            <div className='bg-[#fef7ea] w-70 h-100 rounded-xl ml-10 mt-10 shadow-md hover:-translate-y-1 transition-all'>
 
 
                 <div className='flex items-center justify-center bg-[#526176] rounded-t-xl'>
