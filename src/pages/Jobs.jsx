@@ -111,7 +111,7 @@ const Jobs = () => {
 
           <div className="text-center py-20">
 
-            <h2 className="text-2xl font-semibold text-[#334155]">
+            <h2 className="text-2xl font-semibold text-red-500">
               No jobs found
             </h2>
 
