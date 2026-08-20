@@ -8,6 +8,7 @@ const Jobs = () => {
 
   const [search, setSearch] = useState("");
   const [categ, setCateg] = useState("All");
+  const [type, setType] = useState("All");
 
   const filterJob = jobs.filter((job) => {
 
@@ -15,7 +16,9 @@ const Jobs = () => {
 
     const matchCateg = categ === "All" || job.category === categ;
 
-    return matchSearch && matchCateg;
+    const matchType = type === "All" || job.type === type;
+
+    return matchSearch && matchCateg && matchType;
 
   })
 
@@ -57,6 +60,21 @@ const Jobs = () => {
 
             </select>
           </div>
+
+          <div>
+            <select
+              value={type}
+              className='border border-gray-400 rounded-lg px-3 py-1  outline-none'
+              onChange={(e) => setType(e.target.value)}
+            >
+              <option value="All">All types</option>
+              <option value="Internship">Internship</option>
+              <option value="Full Time">Full Time</option>
+            
+
+            </select>
+          </div>
+
         </div>
       </div>
 
