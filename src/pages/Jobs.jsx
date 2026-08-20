@@ -75,6 +75,16 @@ const Jobs = () => {
             </select>
           </div>
 
+          <button
+          className='bg-red-400 max-w-25 rounded-lg hover:cursor-pointer py-2 hover:bg-red-500 font-medium'
+          onClick={(e)=>{
+            setType("All")
+            setSearch("")
+            setCateg("All")
+          }}
+          
+          >Reset</button>
+
         </div>
       </div>
 
