@@ -1,5 +1,6 @@
 import React from 'react'
 import build from '../assets/building.png'
+import CompanyCard from '../components/CompanyCard'
 
 const Comapnies = () => {
   return (
@@ -15,9 +16,9 @@ const Comapnies = () => {
        
       </div>
 
+        <CompanyCard/>
 
 
-      
       
     </div>
   )
