@@ -5,6 +5,7 @@ import Resources from './pages/Resources'
 import Categories from './pages/Categories'
 import Companies from './pages/Comapnies'
 import Layout from './layouts/Layout'
+import ApplyJob from './components/ApplyJob'
 
 import {Routes , Route} from 'react-router-dom'
 import JobDetail from './components/JobDetail'
@@ -22,10 +23,13 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/jobs' element={<Jobs/>}/>
     <Route path='/jobs/:id' element={<JobDetail/>}/>
+    <Route path='/jobs/:id/apply' element={<ApplyJob/>}/>
+
     <Route path='/companies' element={<Companies/>}/>
     <Route path='/categories' element={<Categories/>}/>
     <Route path='/dashboard' element={<Dashboard/>}/>
     <Route path='/resources' element={<Resources/>}/>
+
 
 
     </Routes>

@@ -126,9 +126,12 @@ const JobDetail = () => {
                 </div>
 
 
-                <button className="mt-8 bg-[#F59E0B] hover:bg-[#D97706] text-white px-7 py-3 rounded-lg font-medium">
+                <Link 
+                to={`/jobs/${job.id}/apply`}
+                
+                className="inline-block   mt-8 bg-[#F59E0B] hover:bg-[#D97706] text-white px-7 py-3 rounded-lg font-medium">
                     Apply Now
-                </button>
+                </Link>
 
             </div>
 
