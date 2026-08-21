@@ -22,6 +22,30 @@ const ApplyJob = () => {
             return;
         }
 
+        const oldApplications = JSON.parse(localStorage.getItem("applications")) || [];
+
+        const application = {
+
+            id: Date.now(),
+            jobId: job.id,
+            jobTitle: job.title,
+            company: job.company,
+            location: job.location,
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            experience: formData.experience,
+            coverLetter: formData.coverLetter,
+            status: "Applied"
+
+        };
+
+        const updateApplications = [
+            ...oldApplications,application
+        ];
+
+        localStorage.setItem("applications" , JSON.stringify(updateApplications));
+
         setSubmit(true);
 
     }
