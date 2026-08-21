@@ -1,11 +1,11 @@
 import Home from './pages/Home'
 import Jobs from './pages/Jobs'
 import Dashboard from './pages/Dashboard'
-import Resources from './pages/Resources'
 import Categories from './pages/Categories'
 import Companies from './pages/Comapnies'
 import Layout from './layouts/Layout'
 import ApplyJob from './components/ApplyJob'
+import Application from './components/Application'
 
 import {Routes , Route} from 'react-router-dom'
 import JobDetail from './components/JobDetail'
@@ -28,7 +28,7 @@ function App() {
     <Route path='/companies' element={<Companies/>}/>
     <Route path='/categories' element={<Categories/>}/>
     <Route path='/dashboard' element={<Dashboard/>}/>
-    <Route path='/resources' element={<Resources/>}/>
+    <Route path='/application' element={<Application/>}/>
 
 
 

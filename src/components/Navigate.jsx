@@ -54,12 +54,12 @@ const Navigate = () => {
                 <div className='shadow-md h-30 rounded-2xl hover:scale-105 transition-all'>
                     <div className='flex items-center pt-4 pl-4 gap-2'>
                         <div><img src={res} alt="" className="w-10" /></div>
-                        <h2 className='text-3xl font-bold text-[#334155]'>Resources</h2>
+                        <h2 className='text-3xl font-bold text-[#334155]'>Applications</h2>
                     </div>
                     <h3 className='text-sm pl-17'>career help & resources...</h3>
 
                     <div className='flex justify-end mt-2 pr-5'>
-                        <NavLink to='/resources' className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">Explore</NavLink>
+                        <NavLink to='/application' className='text-[#F59E0b] hover:text-[#D97706] border-b' href="">Open</NavLink>
                     </div>
 
                 </div>
