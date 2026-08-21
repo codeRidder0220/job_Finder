@@ -24,13 +24,10 @@ function App() {
     <Route path='/jobs' element={<Jobs/>}/>
     <Route path='/jobs/:id' element={<JobDetail/>}/>
     <Route path='/jobs/:id/apply' element={<ApplyJob/>}/>
-
     <Route path='/companies' element={<Companies/>}/>
     <Route path='/categories' element={<Categories/>}/>
     <Route path='/dashboard' element={<Dashboard/>}/>
     <Route path='/application' element={<Application/>}/>
-
-
 
     </Routes>
 
