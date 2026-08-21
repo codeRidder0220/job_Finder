@@ -1,13 +1,29 @@
 import React, { useState } from 'react'
 
-const Application = () => {
+const Applications = () => {
 
     const [applications, setApplications] = useState(
         JSON.parse(localStorage.getItem("applications")) || []
     );
 
 
+    const deleteApplication = (id) => {
+
+        const updatedApplications = applications.filter(
+            (application) => application.id !== id
+        );
+
+        setApplications(updatedApplications);
+
+        localStorage.setItem(
+            "applications",
+            JSON.stringify(updatedApplications)
+        );
+    };
+
+
     return (
+
         <div className="max-w-6xl mx-auto px-6 py-12">
 
             <h1 className="text-4xl font-bold text-[#334155]">
@@ -21,9 +37,10 @@ const Application = () => {
 
             {
                 applications.length === 0 ? (
+
                     <div className="text-center py-20">
 
-                        <h2 className="text-2xl font-semibold text-[#334155]">
+                        <h2 className="text-2xl font-semibold text-red-500">
                             No Applications Yet
                         </h2>
 
@@ -34,6 +51,7 @@ const Application = () => {
                     </div>
 
                 ) : (
+
                     <div className="mt-8 space-y-5">
 
                         {
@@ -70,15 +88,27 @@ const Application = () => {
                                     </div>
 
 
-                                    <div className="border-t mt-5 pt-5">
+                                    <div className="border-t mt-5 pt-5 flex justify-between items-center">
 
-                                        <p className="text-sm text-gray-500">
-                                            Applicant
-                                        </p>
+                                        <div>
 
-                                        <p className="text-[#334155] font-medium">
-                                            {application.name}
-                                        </p>
+                                            <p className="text-sm text-gray-400">
+                                                Applicant
+                                            </p>
+
+                                            <p className="text-[#334155] font-medium">
+                                                {application.name}
+                                            </p>
+
+                                        </div>
+
+
+                                        <button
+                                            onClick={() => deleteApplication(application.id)}
+                                            className="text-red-500 bg-red-200 px-4 py-2 rounded-full hover:text-red-700 text-sm font-medium"
+                                        >
+                                            Delete
+                                        </button>
 
                                     </div>
 
@@ -88,12 +118,12 @@ const Application = () => {
                         }
 
                     </div>
+
                 )
             }
 
         </div>
     )
-
 }
 
-export default Application
+export default Applications
